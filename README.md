@@ -1,51 +1,54 @@
-# cleancode — Claude Code Skill
+# skills
 
-Padrões de **Clean Code modernos para JavaScript/TypeScript**, frontend e backend, em
-formato de [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills).
-Pensado para ser **consultado antes de qualquer tarefa de código** (escrever, revisar ou
-refatorar), garantindo boas práticas e evitando erros.
+Coleção de [Claude Code Skills](https://docs.claude.com/en/docs/claude-code/skills)
+pessoais. Cada subpasta é **uma skill** (uma pasta com um `SKILL.md` na raiz dela).
 
-## O que cobre
+Este repositório mapeia diretamente a pasta de skills do Claude Code
+(`~/.claude/skills`), então o que está versionado aqui é detectado automaticamente.
 
-| Arquivo                        | Conteúdo                                                            |
-| ------------------------------ | ------------------------------------------------------------------ |
-| `SKILL.md`                     | Roteador + princípios universais + checklist universal             |
-| `references/typescript.md`     | TS estrito, sem `any`, unions, `satisfies`, erros, async, módulos  |
-| `references/react.md`          | React 19, "você não precisa de useEffect", estado, performance, a11y |
-| `references/nextjs.md`         | App Router, Server/Client Components, Server Actions, caching, segurança |
-| `references/nestjs.md`         | Módulos, DI, DTOs/validação, guards/interceptors/filters, segurança |
-| `references/testing.md`        | Vitest, Testing Library, Playwright, MSW, testar comportamento     |
-| `references/architecture.md`   | SOLID, regra de dependência, ports & adapters, organização por feature |
+## Skills disponíveis
 
-Cada referência termina com um **checklist acionável** para rodar antes de entregar.
-
-Stack-alvo: TypeScript 5.x, React 18/19, Next.js 14/15 (App Router), NestJS 10/11,
-Node 20+, Vitest/Jest, Playwright.
+| Skill                      | O que faz                                                          |
+| -------------------------- | ----------------------------------------------------------------- |
+| [`cleancode`](./cleancode) | Padrões de Clean Code TS/JS — React, Next, Nest, testes, arquitetura |
 
 ## Instalação
 
-Clone dentro da pasta de skills do Claude Code:
+Clone o repositório **na própria pasta de skills** do Claude Code:
 
 ```bash
-# Skill pessoal (vale para todos os projetos)
-git clone git@github.com:romeroalmeida/skills.git ~/.claude/skills/cleancode
+# se a pasta ainda não existir
+git clone git@github.com:romeroalmeida/skills.git ~/.claude/skills
 
-# ou, para uma skill de projeto específico
-git clone git@github.com:romeroalmeida/skills.git .claude/skills/cleancode
+# se ~/.claude/skills já existir (anexa o repo ao conteúdo atual)
+cd ~/.claude/skills
+git init && git remote add origin git@github.com:romeroalmeida/skills.git
+git fetch && git checkout -t origin/main
 ```
 
-No Windows (PowerShell): `git clone ... $HOME\.claude\skills\cleancode`.
+Windows (PowerShell): troque `~/.claude/skills` por `$HOME\.claude\skills`.
 
-O Claude Code detecta a skill automaticamente. Ela é acionada quando você trabalha com
-código TS/JS (React, Next, Nest) ou pede boas práticas/code review/refatoração.
+O Claude Code passa a detectar todas as skills automaticamente.
 
-## Como usar
+## Como adicionar uma nova skill
 
-1. Identifique a stack da tarefa.
-2. Leia a referência correspondente em `references/`.
-3. Aplique as regras e rode o checklist antes de finalizar.
+1. Crie uma pasta na raiz com o nome da skill (kebab-case): `minha-skill/`.
+2. Dentro, crie um `SKILL.md` com frontmatter:
 
-## Manutenção
+   ```markdown
+   ---
+   name: minha-skill
+   description: >-
+     Descrição clara de QUANDO usar a skill (é isso que decide o acionamento).
+   ---
 
-As referências evoluem com as stacks. PRs/commits bem-vindos ao atualizar versões,
-defaults (ex.: cache do Next) e novas práticas.
+   # Minha Skill
+   ...
+   ```
+
+3. (Opcional) Coloque arquivos de apoio em `minha-skill/references/` e referencie-os
+   no `SKILL.md` (carregamento sob demanda — _progressive disclosure_).
+4. Adicione a skill na tabela acima, `git add`, `commit` e `push`.
+
+> O nome da pasta e o `name` do frontmatter devem coincidir (kebab-case). A `description`
+> é o que faz a skill ser sugerida na hora certa — capriche nos gatilhos.
