@@ -194,3 +194,15 @@ const [user, orders] = await Promise.all([getUser(id), getOrders(id)]);
 - [ ] Sem floating promises; paralelismo com `Promise.all`.
 - [ ] Imutabilidade preservada (sem mutar args); `import type` onde cabe.
 - [ ] Env e dados externos validados em runtime.
+
+## Fontes
+
+- TypeScript — Handbook: https://www.typescriptlang.org/docs/handbook/intro.html
+- TypeScript — Referência do tsconfig (`strict`, `noUncheckedIndexedAccess`, etc.):
+  https://www.typescriptlang.org/tsconfig
+- typescript-eslint — regras (`no-explicit-any`, `no-floating-promises`,
+  `consistent-type-imports`): https://typescript-eslint.io/rules/
+- Matt Pocock — Total TypeScript (padrões modernos, `satisfies`, branded types):
+  https://www.totaltypescript.com
+- MDN — JavaScript (async/await, Promise, módulos ESM):
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript

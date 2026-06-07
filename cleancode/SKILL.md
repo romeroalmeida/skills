@@ -83,3 +83,11 @@ rode o **Checklist universal** abaixo e o checklist da referência da stack envo
 - [ ] A mudança é focada e o diff é mínimo para o objetivo.
 
 > Detalhes e exemplos ✅/❌ de cada ponto estão nos arquivos de `references/`.
+
+## Procedência (fontes)
+
+Cada arquivo em `references/` termina com uma seção **Fontes** apontando para a
+documentação primária (react.dev, nextjs.org, w3.org/WCAG, web.dev, docs.nestjs.com,
+typescriptlang.org, testing-library.com, etc.). Fatos "duros" foram conferidos na fonte
+oficial em jun/2026: limiares de Core Web Vitals, contraste WCAG 2.2, APIs do React 19 e
+defaults de cache do Next 15. Ao atualizar uma regra, confirme na fonte e ajuste o link.

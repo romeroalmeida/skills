@@ -107,3 +107,15 @@ export async function createPost(formData: FormData) {
 - [ ] `server-only` protegendo código sensível; nada sensível em `NEXT_PUBLIC_*`.
 - [ ] `next/image` e `next/font`; metadata pela API.
 - [ ] Defaults de cache conferidos para a versão do Next em uso.
+
+## Fontes
+
+Mudanças de cache do Next 15 verificadas no anúncio oficial (jun/2026): `fetch` e GET
+Route Handlers deixaram de ser cacheados por padrão; `cookies`/`headers`/`params`/
+`searchParams` passaram a ser assíncronos.
+
+- Next.js — Documentação (App Router): https://nextjs.org/docs/app
+- Next.js 15 — Caching Semantics e Async Request APIs: https://nextjs.org/blog/next-15
+- Next.js — Data Fetching & Caching: https://nextjs.org/docs/app/building-your-application/data-fetching
+- Next.js — Server Actions: https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations
+- Next.js — Segurança em Server Components/Actions: https://nextjs.org/blog/security-nextjs-server-components-actions

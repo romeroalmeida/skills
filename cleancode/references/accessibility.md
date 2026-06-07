@@ -86,3 +86,14 @@ Acessibilidade é requisito, não enfeite. Alvo prático: **WCAG 2.2 AA**. Combi
 - [ ] Contraste AA nos dois temas; respeita `prefers-reduced-motion`; zoom 200% ok.
 - [ ] Conteúdo dinâmico anunciado via live region.
 - [ ] `jsx-a11y` + axe no CI; verificação manual de teclado/leitor de tela feita.
+
+## Fontes
+
+Razões de contraste verificadas na fonte oficial (W3C) em jun/2026: WCAG 2.2 SC 1.4.3
+exige 4,5:1 (texto normal) e 3:1 (texto grande, ≥18pt ou ≥14pt negrito).
+
+- W3C — WCAG 2.2 (norma): https://www.w3.org/TR/WCAG22/
+- W3C — Understanding 1.4.3 Contrast (Minimum): https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
+- W3C — WAI-ARIA Authoring Practices (padrões de widgets): https://www.w3.org/WAI/ARIA/apg/
+- MDN — Accessibility: https://developer.mozilla.org/en-US/docs/Web/Accessibility
+- Deque — axe / regras: https://www.deque.com/axe/ · eslint-plugin-jsx-a11y: https://github.com/jsx-eslint/eslint-plugin-jsx-a11y

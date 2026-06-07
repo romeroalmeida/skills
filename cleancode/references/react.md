@@ -285,3 +285,15 @@ return <form action={formAction}>{isPending ? "Enviando…" : <Submit />}</form>
 - [ ] Organização por feature; lógica fora do JSX; sem os anti-padrões da §16.
 - [ ] Acessibilidade, estilo e performance de assets conferidos (`accessibility.md`,
       `styling.md`, `web-performance.md`).
+
+## Fontes
+
+APIs do React 19 e regras verificadas na documentação oficial (react.dev) em jun/2026.
+
+- react.dev — You Might Not Need an Effect: https://react.dev/learn/you-might-not-need-an-effect
+- react.dev — Rules of Hooks: https://react.dev/reference/rules/rules-of-hooks
+- react.dev — Reutilizando lógica com Custom Hooks: https://react.dev/learn/reusing-logic-with-custom-hooks
+- react.dev — Blog do React 19 (Actions, `use`, ref como prop, metadata): https://react.dev/blog/2024/12/05/react-19
+- react.dev — Passing data deeply / Context: https://react.dev/learn/passing-data-deeply-with-context
+- TanStack Query (estado de servidor): https://tanstack.com/query/latest/docs
+- React Hook Form: https://react-hook-form.com · react-error-boundary: https://github.com/bvaughn/react-error-boundary

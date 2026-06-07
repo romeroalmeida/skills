@@ -104,3 +104,15 @@ const aUser = (over: Partial<User> = {}): User => ({
 - [ ] Backend: service com repo mockado + e2e no fluxo; casos de erro cobertos.
 - [ ] E2E só em jornadas críticas, sem flakiness; sem `.only`/`.skip` commitado.
 - [ ] Roda e passa no CI.
+
+## Fontes
+
+Verificado em jun/2026: o "Testing Trophy" e o princípio guia da Testing Library.
+
+- Kent C. Dodds — Testing Trophy ("Write tests. Not too many. Mostly integration."):
+  https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications
+- Testing Library — Guiding Principles ("the more your tests resemble the way your
+  software is used…"): https://testing-library.com/docs/guiding-principles
+- Testing Library — sobre queries por papel/acessibilidade: https://testing-library.com/docs/queries/about
+- Vitest: https://vitest.dev · Playwright: https://playwright.dev · MSW: https://mswjs.io
+- NestJS — Testing: https://docs.nestjs.com/fundamentals/testing

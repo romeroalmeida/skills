@@ -79,3 +79,14 @@ CrUX). Otimize o que os dados apontam — não no escuro.
 - [ ] Mídia com dimensões/`aspect-ratio` (sem CLS); imagens responsivas e lazy (exceto LCP).
 - [ ] Resource hints (`preconnect`/`preload`/`prefetch`); terceiros auditados e diferidos.
 - [ ] Cache de assets com hash/immutable; compressão ativa; listas grandes virtualizadas.
+
+## Fontes
+
+Limiares de Core Web Vitals verificados na fonte oficial (Google/web.dev) em jun/2026:
+LCP < 2,5s, INP < 200ms, CLS < 0,1; INP é métrica estável desde 2024 (substituiu o FID).
+
+- web.dev — Core Web Vitals (visão geral e limiares): https://web.dev/articles/vitals
+- web.dev — LCP: https://web.dev/articles/lcp · INP: https://web.dev/articles/inp · CLS: https://web.dev/articles/cls
+- web.dev — Otimização de carregamento e Fast load times: https://web.dev/explore/fast
+- MDN — Performance: https://developer.mozilla.org/en-US/docs/Web/Performance
+- Next.js — Otimizações (imagens, fontes, bundling): https://nextjs.org/docs/app/building-your-application/optimizing

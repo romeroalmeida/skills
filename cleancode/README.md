@@ -20,7 +20,9 @@ refatorar), garantindo boas práticas e evitando erros.
 | `references/testing.md`        | Vitest, Testing Library, Playwright, MSW, testar comportamento     |
 | `references/architecture.md`   | SOLID, regra de dependência, ports & adapters, organização por feature |
 
-Cada referência termina com um **checklist acionável** para rodar antes de entregar.
+Cada referência termina com um **checklist acionável** e uma seção **Fontes** com links
+para a documentação primária. Fatos "duros" (Core Web Vitals, contraste WCAG, APIs do
+React 19, defaults do Next 15) foram verificados na fonte oficial em jun/2026.
 
 Stack-alvo: TypeScript 5.x, React 18/19, Next.js 14/15 (App Router), NestJS 10/11,
 Node 20+, Vitest/Jest, Playwright.

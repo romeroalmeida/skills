@@ -114,3 +114,16 @@ src/
 - [ ] Sem abstração prematura (regra do três); abstrações com nome honesto.
 - [ ] Baixo acoplamento, alta coesão; contratos explícitos nas fronteiras.
 - [ ] Complexidade proporcional ao problema (KISS/YAGNI).
+
+## Fontes
+
+Verificado em jun/2026: "The Clean Architecture" e a Regra de Dependência (dependências
+apontam para dentro).
+
+- Robert C. Martin — The Clean Architecture (Dependency Rule):
+  https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+- Alistair Cockburn — Hexagonal Architecture (Ports & Adapters), originador do padrão:
+  https://alistair.cockburn.us/hexagonal-architecture/
+- Martin Fowler — catálogo de padrões e refatoração (ex.: Law of Demeter): https://martinfowler.com
+- SOLID — princípios de design OO (Robert C. Martin): https://en.wikipedia.org/wiki/SOLID
+- MDN/refactoring.guru — composição vs herança: https://refactoring.guru/design-patterns

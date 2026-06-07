@@ -95,3 +95,12 @@ CSS moderno e estratégias de styling para apps TS/JS. Combine com `accessibilit
 - [ ] Dark mode com contraste garantido nos dois temas.
 - [ ] Baixa especificidade; sem `!important`; sem CSS global vazando.
 - [ ] Anima só `transform`/`opacity`; respeita `prefers-reduced-motion`.
+
+## Fontes
+
+- MDN — CSS (Grid, Flexbox, custom properties, nesting, container queries, `:has()`,
+  logical properties): https://developer.mozilla.org/en-US/docs/Web/CSS
+- MDN — `prefers-reduced-motion`: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- web.dev — Learn CSS / Responsive design: https://web.dev/learn/css
+- Tailwind CSS — Documentação: https://tailwindcss.com/docs
+- vanilla-extract (zero-runtime CSS-in-TS): https://vanilla-extract.style

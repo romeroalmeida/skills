@@ -134,3 +134,15 @@ export class CreateUserDto {
 - [ ] Transações onde precisa; migrations; sem `synchronize` em prod; sem N+1.
 - [ ] helmet + CORS + rate limit; senhas com hash; nada sensível logado.
 - [ ] Services com unit tests; fluxo crítico com e2e.
+
+## Fontes
+
+- NestJS — Documentação oficial: https://docs.nestjs.com
+- NestJS — Validation (`ValidationPipe`, `whitelist`): https://docs.nestjs.com/techniques/validation
+- NestJS — Providers / DI: https://docs.nestjs.com/providers ·
+  Guards: https://docs.nestjs.com/guards · Interceptors: https://docs.nestjs.com/interceptors ·
+  Exception Filters: https://docs.nestjs.com/exception-filters
+- NestJS — Configuration (env): https://docs.nestjs.com/techniques/configuration ·
+  Security (helmet, CORS, throttler): https://docs.nestjs.com/security/helmet
+- class-validator: https://github.com/typestack/class-validator
+- OWASP — Top Ten e Cheat Sheets (segurança de API/back-end): https://owasp.org/www-project-top-ten/
