@@ -32,23 +32,11 @@ O Claude Code passa a detectar todas as skills automaticamente.
 
 ## Como adicionar uma nova skill
 
-1. Crie uma pasta na raiz com o nome da skill (kebab-case): `minha-skill/`.
-2. Dentro, crie um `SKILL.md` com frontmatter:
+Resumo: crie uma pasta na raiz (`minha-skill/`) com um `SKILL.md` (frontmatter `name` +
+`description` + instruções), adicione a linha na tabela acima e dê `git push`.
 
-   ```markdown
-   ---
-   name: minha-skill
-   description: >-
-     Descrição clara de QUANDO usar a skill (é isso que decide o acionamento).
-   ---
-
-   # Minha Skill
-   ...
-   ```
-
-3. (Opcional) Coloque arquivos de apoio em `minha-skill/references/` e referencie-os
-   no `SKILL.md` (carregamento sob demanda — _progressive disclosure_).
-4. Adicione a skill na tabela acima, `git add`, `commit` e `push`.
+📖 **Passo a passo completo, formato do `SKILL.md`, boas práticas de `description` e
+validação:** veja **[CONTRIBUTING.md](./CONTRIBUTING.md)**.
 
 > O nome da pasta e o `name` do frontmatter devem coincidir (kebab-case). A `description`
 > é o que faz a skill ser sugerida na hora certa — capriche nos gatilhos.
