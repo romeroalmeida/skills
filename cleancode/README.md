@@ -11,8 +11,11 @@ refatorar), garantindo boas práticas e evitando erros.
 | ------------------------------ | ------------------------------------------------------------------ |
 | `SKILL.md`                     | Roteador + princípios universais + checklist universal             |
 | `references/typescript.md`     | TS estrito, sem `any`, unions, `satisfies`, erros, async, módulos  |
-| `references/react.md`          | React 19, "você não precisa de useEffect", estado, performance, a11y |
+| `references/react.md`          | Componentes/tipagem, composição, hooks, estado local/global, data fetching (TanStack), React 19, Suspense, performance, forms |
 | `references/nextjs.md`         | App Router, Server/Client Components, Server Actions, caching, segurança |
+| `references/styling.md`        | CSS moderno, design tokens, Tailwind/CSS Modules/CSS-in-JS, temas, responsividade |
+| `references/web-performance.md`| Core Web Vitals (LCP/INP/CLS), bundle, code splitting, imagens, carregamento |
+| `references/accessibility.md`  | WCAG AA, semântica, teclado/foco, ARIA, formulários, contraste, testes a11y |
 | `references/nestjs.md`         | Módulos, DI, DTOs/validação, guards/interceptors/filters, segurança |
 | `references/testing.md`        | Vitest, Testing Library, Playwright, MSW, testar comportamento     |
 | `references/architecture.md`   | SOLID, regra de dependência, ports & adapters, organização por feature |

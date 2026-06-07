@@ -21,11 +21,17 @@ rode o **Checklist universal** abaixo e o checklist da referência da stack envo
    | Tarefa envolve…                          | Leia                              |
    | ---------------------------------------- | --------------------------------- |
    | Qualquer código TS/JS                    | `references/typescript.md`        |
-   | Componentes, hooks, UI                   | `references/react.md`             |
+   | Componentes, hooks, estado, data fetching| `references/react.md`             |
    | App Router, RSC, server actions, SSR     | `references/nextjs.md`            |
+   | CSS, design tokens, Tailwind, temas      | `references/styling.md`           |
+   | Core Web Vitals, bundle, carregamento    | `references/web-performance.md`   |
+   | Acessibilidade (a11y), WCAG, ARIA        | `references/accessibility.md`     |
    | API, controllers, DI, DTOs               | `references/nestjs.md`            |
    | Testes (unit/integration/e2e)            | `references/testing.md`           |
    | Estrutura de pastas, camadas, SOLID      | `references/architecture.md`      |
+
+   > Frontend completo = `react.md` (+ `nextjs.md`) **+** `styling.md` +
+   > `accessibility.md` + `web-performance.md`. Não pare só no React.
 
 2. Aplique as regras. Quando houver conflito, a ordem de prioridade é:
    **Correção > Segurança > Legibilidade > Consistência > Performance**.
