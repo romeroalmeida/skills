@@ -135,7 +135,17 @@ export class CreateUserDto {
 - [ ] helmet + CORS + rate limit; senhas com hash; nada sensível logado.
 - [ ] Services com unit tests; fluxo crítico com e2e.
 
+## Veja também
+
+Backend não para no Nest: **`api-design.md`** (HTTP/REST, status, erros padronizados),
+**`database.md`** (transações, N+1, migrations), **`security.md`** (OWASP, authn/authz) e
+**`node.md`** (runtime, shutdown, observabilidade).
+
 ## Fontes
+
+Auditado em jun/2026 na doc oficial: `whitelist` ("remove propriedades sem decorator de
+validação"), `forbidNonWhitelisted` ("lança exceção em vez de remover") e `transform`
+("transforma o payload na instância tipada do DTO e converte tipos primitivos").
 
 - NestJS — Documentação oficial: https://docs.nestjs.com
 - NestJS — Validation (`ValidationPipe`, `whitelist`): https://docs.nestjs.com/techniques/validation

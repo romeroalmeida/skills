@@ -17,6 +17,10 @@ refatorar), garantindo boas práticas e evitando erros.
 | `references/web-performance.md`| Core Web Vitals (LCP/INP/CLS), bundle, code splitting, imagens, carregamento |
 | `references/accessibility.md`  | WCAG AA, semântica, teclado/foco, ARIA, formulários, contraste, testes a11y |
 | `references/nestjs.md`         | Módulos, DI, DTOs/validação, guards/interceptors/filters, segurança |
+| `references/api-design.md`     | HTTP/REST, status codes, Problem Details (RFC 9457), paginação, versionamento, idempotência |
+| `references/database.md`       | Modelagem, ORM (Prisma/Drizzle), N+1, índices, transações/isolamento, migrations, pooling |
+| `references/security.md`       | OWASP Top 10:2025, authn/authz, injeção/XSS, segredos, headers, dependências |
+| `references/node.md`           | Event loop, async/streams, erros, config 12-factor, graceful shutdown, observabilidade |
 | `references/testing.md`        | Vitest, Testing Library, Playwright, MSW, testar comportamento     |
 | `references/architecture.md`   | SOLID, regra de dependência, ports & adapters, organização por feature |
 
@@ -25,7 +29,7 @@ para a documentação primária. Fatos "duros" (Core Web Vitals, contraste WCAG,
 React 19, defaults do Next 15) foram verificados na fonte oficial em jun/2026.
 
 Stack-alvo: TypeScript 5.x, React 18/19, Next.js 14/15 (App Router), NestJS 10/11,
-Node 20+, Vitest/Jest, Playwright.
+Node 20+ LTS, Prisma/Drizzle, Vitest/Jest, Playwright.
 
 ## Instalação
 

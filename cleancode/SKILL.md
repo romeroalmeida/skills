@@ -26,12 +26,18 @@ rode o **Checklist universal** abaixo e o checklist da referência da stack envo
    | CSS, design tokens, Tailwind, temas      | `references/styling.md`           |
    | Core Web Vitals, bundle, carregamento    | `references/web-performance.md`   |
    | Acessibilidade (a11y), WCAG, ARIA        | `references/accessibility.md`     |
-   | API, controllers, DI, DTOs               | `references/nestjs.md`            |
+   | NestJS: módulos, controllers, DI, DTOs   | `references/nestjs.md`            |
+   | Design de API HTTP/REST, status, erros   | `references/api-design.md`        |
+   | Banco de dados, ORM, transações, índices | `references/database.md`          |
+   | Segurança (OWASP), authn/authz, secrets  | `references/security.md`          |
+   | Node.js runtime, async, streams, deploy  | `references/node.md`             |
    | Testes (unit/integration/e2e)            | `references/testing.md`           |
    | Estrutura de pastas, camadas, SOLID      | `references/architecture.md`      |
 
-   > Frontend completo = `react.md` (+ `nextjs.md`) **+** `styling.md` +
-   > `accessibility.md` + `web-performance.md`. Não pare só no React.
+   > **Frontend completo** = `react.md` (+ `nextjs.md`) + `styling.md` +
+   > `accessibility.md` + `web-performance.md`. **Backend completo** = `nestjs.md` (ou
+   > `node.md` para serviços fora do Nest) + `api-design.md` + `database.md` + `security.md`.
+   > `security.md` e `architecture.md` valem para front **e** back. Não pare numa só.
 
 2. Aplique as regras. Quando houver conflito, a ordem de prioridade é:
    **Correção > Segurança > Legibilidade > Consistência > Performance**.
@@ -88,6 +94,9 @@ rode o **Checklist universal** abaixo e o checklist da referência da stack envo
 
 Cada arquivo em `references/` termina com uma seção **Fontes** apontando para a
 documentação primária (react.dev, nextjs.org, w3.org/WCAG, web.dev, docs.nestjs.com,
-typescriptlang.org, testing-library.com, etc.). Fatos "duros" foram conferidos na fonte
-oficial em jun/2026: limiares de Core Web Vitals, contraste WCAG 2.2, APIs do React 19 e
-defaults de cache do Next 15. Ao atualizar uma regra, confirme na fonte e ajuste o link.
+typescriptlang.org, testing-library.com, owasp.org, prisma.io, nodejs.org, etc.). Fatos
+"duros" foram conferidos na fonte oficial em jun/2026: limiares de Core Web Vitals,
+contraste WCAG 2.2, APIs do React 19, defaults de cache do Next 15, regras do
+typescript-eslint, opções do `ValidationPipe` do Nest, transações do Prisma, RFC 9457
+(Problem Details) e **OWASP Top 10:2025**. Ao atualizar uma regra, confirme na fonte e
+ajuste o link.

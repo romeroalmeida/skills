@@ -183,6 +183,47 @@ const [user, orders] = await Promise.all([getUser(id), getOrders(id)]);
   `consistent-type-imports`, `no-non-null-assertion`.
 - Valide **env vars** com zod num módulo central, falhando no boot se faltarem.
 
+## 10. Tipos avançados (use quando o domínio pede — não para exibição)
+
+> Regra de ouro: tipos servem para tornar estados inválidos irrepresentáveis e dar
+> segurança/autocomplete. Se um tipo ficou ilegível, virou dívida técnica — simplifique.
+> YAGNI também vale para tipos.
+
+- **Generics com constraints** (`<T extends …>`) e **`const` type parameters** (TS 5.0)
+  para inferir literais sem `as const` no call site:
+
+```ts
+function first<const T extends readonly unknown[]>(t: T): T[0] { return t[0]; }
+```
+
+- **Mapped types + key remapping** e **template literal types** para derivar tipos:
+
+```ts
+type Getters<T> = { [K in keyof T & string as `get${Capitalize<K>}`]: () => T[K] };
+```
+
+- **Conditional types + `infer`** para extrair partes de um tipo:
+
+```ts
+type ElementOf<T> = T extends readonly (infer U)[] ? U : never;
+```
+
+- **Utility types** nativos (`Pick`, `Omit`, `Partial`, `Required`, `Record`, `Readonly`,
+  `NonNullable`, `Awaited`, `ReturnType`, `Parameters`) — prefira-os a recriar na mão.
+- **Assertion functions** e **type predicates** para narrowing reutilizável:
+
+```ts
+function assert(c: unknown, msg: string): asserts c { if (!c) throw new Error(msg); }
+function isUser(x: unknown): x is User { /* … */ return true; }
+```
+
+- **`NoInfer<T>`** (TS 5.4) para bloquear inferência indesejada num parâmetro.
+- **`using` / `await using` + `Symbol.dispose`** (TS 5.2) para cleanup determinístico de
+  recursos (conexões, locks, arquivos) — substitui try/finally manual.
+- **Evite over-engineering de tipos:** 4 conditional types aninhados numa função interna
+  costuma ser sinal de modelagem de dados errada. Tipos malabaristas custam compilação e
+  legibilidade — o tipo serve ao código, não o contrário.
+
 ## Checklist TS/JS
 
 - [ ] `strict` + `noUncheckedIndexedAccess` ligados; zero `any`.
@@ -196,6 +237,10 @@ const [user, orders] = await Promise.all([getUser(id), getOrders(id)]);
 - [ ] Env e dados externos validados em runtime.
 
 ## Fontes
+
+Auditado em jun/2026: as regras do typescript-eslint citadas foram confirmadas na fonte
+oficial (`no-floating-promises`, `no-explicit-any`, `no-unused-vars`, `await-thenable` no
+preset *recommended*; `no-non-null-assertion` no *strict*; `consistent-type-imports`).
 
 - TypeScript — Handbook: https://www.typescriptlang.org/docs/handbook/intro.html
 - TypeScript — Referência do tsconfig (`strict`, `noUncheckedIndexedAccess`, etc.):

@@ -98,6 +98,9 @@ CSS moderno e estratégias de styling para apps TS/JS. Combine com `accessibilit
 
 ## Fontes
 
+Auditado em jun/2026 na MDN: container queries (`container-type: inline-size` + `@container`
++ unidades `cqi/cqw`) permitem o componente reagir ao **container**, não à viewport.
+
 - MDN — CSS (Grid, Flexbox, custom properties, nesting, container queries, `:has()`,
   logical properties): https://developer.mozilla.org/en-US/docs/Web/CSS
 - MDN — `prefers-reduced-motion`: https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
