@@ -8,9 +8,10 @@ Este repositório mapeia diretamente a pasta de skills do Claude Code
 
 ## Skills disponíveis
 
-| Skill                      | O que faz                                                          |
-| -------------------------- | ----------------------------------------------------------------- |
-| [`cleancode`](./cleancode) | Padrões de Clean Code TS/JS — React, Next, Nest, testes, arquitetura |
+| Skill                                  | O que faz                                                          |
+| -------------------------------------- | ----------------------------------------------------------------- |
+| [`cleancode`](./cleancode)             | Padrões de Clean Code TS/JS — React, Next, Nest, testes, arquitetura |
+| [`front-architecture`](./front-architecture) | Arquitetura feature-based React/Vite — perguntas de scoping + scaffold das pastas |
 
 ## Instalação
 
